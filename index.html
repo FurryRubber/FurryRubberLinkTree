@@ -61,7 +61,6 @@
             transform: scale(1.1);
         }
 
-        /* Neon glow animation */
         @keyframes neonGlow {
             0% { text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; }
             50% { text-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000; }
@@ -72,7 +71,6 @@
             animation: neonGlow 1.5s infinite alternate;
         }
 
-        /* Pulsating cursor trail */
         .trail {
             position: absolute;
             width: 12px;
@@ -89,6 +87,13 @@
             to { opacity: 0; transform: scale(1.5); }
         }
 
+        .disclaimer {
+            font-size: 0.9em;
+            color: #cccccc;
+            margin-top: 30px;
+            padding: 10px;
+            border-top: 1px solid #555;
+        }
     </style>
 </head>
 <body>
@@ -97,11 +102,15 @@
 <h2>🔥 Adult Content Ahead (18+) 🔥</h2>
 <ul>
     <li><a href="https://bsky.app/profile/furryrubber.com"> BlueSky</a></li>
-    <li><a href="https://x.com/KinkyDrag0n">🖤 Twitter</a></li>
+    <li><a href="https://x.com/KinkyDrag0n"> Twitter</a></li>
 </ul>
 
+<p class="disclaimer">
+    This website contains artistic depictions and themes intended for mature audiences.
+    All content adheres to guidelines allowing visual and/or textual depictions in an artistic and expressive manner.
+</p>
+
 <script>
-  // Cursor trail effect
   document.addEventListener("mousemove", function(e) {
     let trail = document.createElement("div");
     trail.classList.add("trail");
